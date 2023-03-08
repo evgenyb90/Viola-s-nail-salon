@@ -52,11 +52,11 @@ $is_invalid = false;
 
         <form method="post">
         <label for="email">email</label>
-        <input type="email" name="email" id="email"
+        <input style="max-width: 350px; width: 70%" type="email" name="email" id="email"
                 value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
 
         <label for="password">password</label>
-        <input type="password" name="password" id="password">
+        <input style="max-width: 350px; width: 70%" type="password" name="password" id="password">
 
         <button class="btn">Log in</button>
 

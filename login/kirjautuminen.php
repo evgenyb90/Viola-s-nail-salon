@@ -19,7 +19,7 @@ if (isset($_SESSION["user_id"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Palaute</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <link rel="icon" type="image/x-icon" href="../img/nail-polish-64.png">
     <link rel="stylesheet" href="../css/style-form.css">
@@ -32,7 +32,7 @@ if (isset($_SESSION["user_id"])) {
     <p>Terve <?= htmlspecialchars($user["name"]) ?>!</p> <br>
     <a href="../index.php">Etusivu</a> <br>
     <a href="logout.php">Kirjaudu ulos</a> <br><br>
-    <h1>Feedback Form</h1>
+    <h1>Palaute</h1>
     <form action="feedback.php" method="POST">
         <p>Merkitse sinulle sopiva päiviä ja aika ja otamme sinuun pian yhteyttä.</p>
         <label for="name">Valitse Työntekijä:</label><br>
@@ -45,7 +45,7 @@ if (isset($_SESSION["user_id"])) {
         </select><br>
 
         <label for="feedback">Message:</label><br>
-        <textarea name="feedback" id="feedback" rows="5" required></textarea><br>
+        <textarea style="max-width: 450px; width: 85%; resize: none;" name="feedback" id="feedback" rows="5" required></textarea><br>
 
         <button class="btn" type="submit">Submit Feedback</button>
 </form>
