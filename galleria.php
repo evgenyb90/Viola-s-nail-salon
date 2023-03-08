@@ -3,28 +3,24 @@
 <?php
     include('./header.php')
 ?>
-<main>
-        <section class="hero">
-            <div class="container hero__container">
-                <div class="hero__text flex hero__flex">
-                    <h1 class="hero__title">Viola&rsquo;s nail and&nbsp;beauty salon</h1>
-                    <p class="hero__p">Hetki aikaa kauneuden parissa</p>
-                    <a href="./login/login.php"><button class="hero__btn btn">varaa aika</button></a>
-                </div>
-                <div class="hero__right"></div>
-            </div>
-        </section>
-        <section class="about">
-            <div class="container">
-                <p class="about__p">Viola’s Nail & Beauty Salon on upea salonki, joka palvelee Sinua Espoossa. Intohimonamme on tuottaa paras palvelukokemus, jonka vuoksi suunnittelemme palvelumme juuri Sinua varten.
 
-                Rakennekynnet toteutamme geelimenetelmällä. Myös geelilakkaus luonnonkynnelle sekä varpaille. Kysy rohkeasti eri vaihtoehdoista, niin mietitään yhdessä Sinulle sopiva ratkaisu!
-                    
-                    Meillä sinua palvelee kokeneet ja ammattitaitoiset kauneudenhoitajat, joille Sinä, olet kaikista tärkein </p>
-            </div>
-        </section>
-    </main>
-    <footer class="footer index-footer">
+<section class="galleria">
+        <div class="container">
+            <ul class="galleria__grid">
+                <li class="galleria__grid__item galleria__grid__item1"><img src="img/galleria (1).jfif" alt=""></li>
+                <li class="galleria__grid__item galleria__grid__item2"><img src="img/galleria (3).jfif" alt=""></li>
+                <li class="galleria__grid__item galleria__grid__item3"><img src="img/hero.jpeg" alt=""></li>
+                <li class="galleria__grid__item galleria__grid__item4"><img src="img/galleria (4).jfif" alt=""></li>
+                <li class="galleria__grid__item galleria__grid__item5"><img src="img/galleria (12).jfif" alt=""></li>
+                <li class="galleria__grid__item galleria__grid__item6"><img src="img/galleria (7).jfif" alt=""></li>
+                <li class="galleria__grid__item galleria__grid__item7"><img src="img/galleria (13).jfif" alt=""></li>
+                <li class="galleria__grid__item galleria__grid__item8"><img src="img/galleria (9).jfif" alt=""></li>
+                <li class="galleria__grid__item galleria__grid__item9"><img src="img/galleria (8).jfif" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
         <div class="container flex footer__flex">
            <div class="footer__left">
                 <h2 class="footer__title">ESPOO</h2>
@@ -51,4 +47,3 @@
     <script src="main.js"></script>
 </body>
 </html>
-

@@ -40,28 +40,32 @@ $is_invalid = false;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="icon" type="image/x-icon" href="../img/nail-polish-64.png">
+    <link rel="stylesheet" href="../css/style-form.css">
 </head>
 <body>
-    <a href="../index.php">Etusivu</a>
-    <h1>Login</h1>
+    <div class="form">
+        <h1 class="hero__title">Login</h1>
+        <?php if ($is_invalid): ?>
+            <em>Invalid login</em>
+            <?php endif; ?>
 
-    <?php if ($is_invalid): ?>
-        <em>Invalid login</em>
-        <?php endif; ?>
+        <form method="post">
+        <label for="email">email</label>
+        <input type="email" name="email" id="email"
+                value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
 
-    <form method="post">
-    <label for="email">email</label>
-    <input type="email" name="email" id="email"
-            value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
 
-    <label for="password">password</label>
-    <input type="password" name="password" id="password">
+        <button class="btn">Log in</button>
 
-    <button>Log in</button>
+        </form>
 
-    </form>
-
+        <a href="signup.html">Rekisteröityminen</a> <br>
+        <a href="../index.php">Etusivu</a>
 
 
+    </div>
     </body>
 </html>

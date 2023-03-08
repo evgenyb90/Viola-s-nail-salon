@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="icon" type="image/x-icon" href="../img/nail-polish-64.png">
+    <link rel="stylesheet" href="../css/style-form.css">
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
     <script src="js/validation.js" defer></script>
 </head>
 <body>
+    <a href="../index.php">Etusivu</a>
     <h1>Rekisteröityminen</h1>
 
     <form action="process-signup.php" method="POST" id="signup" novalidate>
@@ -30,7 +33,8 @@
             <input type="password" id="password_confirmation" name="password_confirmation">
         </div>
 
-        <button>Sign up</button>
+        <button class="btn">Sign up</button> <br>
+        
 
     </form>
     

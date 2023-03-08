@@ -4,27 +4,35 @@
     include('./header.php')
 ?>
 <main>
-        <section class="hero">
-            <div class="container hero__container">
-                <div class="hero__text flex hero__flex">
-                    <h1 class="hero__title">Viola&rsquo;s nail and&nbsp;beauty salon</h1>
-                    <p class="hero__p">Hetki aikaa kauneuden parissa</p>
-                    <a href="./login/login.php"><button class="hero__btn btn">varaa aika</button></a>
-                </div>
-                <div class="hero__right"></div>
-            </div>
-        </section>
-        <section class="about">
+        <section class="tiimi">
             <div class="container">
-                <p class="about__p">Viola’s Nail & Beauty Salon on upea salonki, joka palvelee Sinua Espoossa. Intohimonamme on tuottaa paras palvelukokemus, jonka vuoksi suunnittelemme palvelumme juuri Sinua varten.
-
-                Rakennekynnet toteutamme geelimenetelmällä. Myös geelilakkaus luonnonkynnelle sekä varpaille. Kysy rohkeasti eri vaihtoehdoista, niin mietitään yhdessä Sinulle sopiva ratkaisu!
-                    
-                    Meillä sinua palvelee kokeneet ja ammattitaitoiset kauneudenhoitajat, joille Sinä, olet kaikista tärkein </p>
+                <ul class="tiimi__flex flex">
+                    <li class="tiimi__item flex">
+                        <img src="img/tiimi (1).jfif" alt="">
+                        <span class="tiimi__name">Veronika</span>
+                        <span>Kynsiteknikko</span>
+                    </li>
+                    <li class="tiimi__item flex">
+                        <img src="img/tiimi (2).jfif" alt="">
+                        <span class="tiimi__name">Karoliina</span>
+                        <span>Kynsiteknikko</span>
+                    </li>
+                    <li class="tiimi__item flex">
+                        <img src="img/tiimi (3).jfif" alt="">
+                        <span class="tiimi__name">Pilvi</span>
+                        <span>Kynsiteknikko</span>
+                    </li>
+                    <li class="tiimi__item flex">
+                        <img src="img/tiimi (4).jfif" alt="">
+                        <span class="tiimi__name">Tanja</span>
+                        <span>Kynsiteknikko</span>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
-    <footer class="footer index-footer">
+
+    <footer class="footer footer-tiimi">
         <div class="container flex footer__flex">
            <div class="footer__left">
                 <h2 class="footer__title">ESPOO</h2>
@@ -51,4 +59,3 @@
     <script src="main.js"></script>
 </body>
 </html>
-

@@ -3,28 +3,75 @@
 <?php
     include('./header.php')
 ?>
-<main>
-        <section class="hero">
-            <div class="container hero__container">
-                <div class="hero__text flex hero__flex">
-                    <h1 class="hero__title">Viola&rsquo;s nail and&nbsp;beauty salon</h1>
-                    <p class="hero__p">Hetki aikaa kauneuden parissa</p>
-                    <a href="./login/login.php"><button class="hero__btn btn">varaa aika</button></a>
-                </div>
-                <div class="hero__right"></div>
-            </div>
-        </section>
-        <section class="about">
+ <main>
+        <section class="price">
             <div class="container">
-                <p class="about__p">Viola’s Nail & Beauty Salon on upea salonki, joka palvelee Sinua Espoossa. Intohimonamme on tuottaa paras palvelukokemus, jonka vuoksi suunnittelemme palvelumme juuri Sinua varten.
-
-                Rakennekynnet toteutamme geelimenetelmällä. Myös geelilakkaus luonnonkynnelle sekä varpaille. Kysy rohkeasti eri vaihtoehdoista, niin mietitään yhdessä Sinulle sopiva ratkaisu!
-                    
-                    Meillä sinua palvelee kokeneet ja ammattitaitoiset kauneudenhoitajat, joille Sinä, olet kaikista tärkein </p>
+                <h3 class="price__title">HINNASTO</h3>
+                <ul class="price__grid">
+                    <li class="price__item">
+                        <span class="price__item__naming">Rakennekynnet</span>
+                        <span class="price__item__descr">Akryylillä</span>
+                        <span class="price__ineuro">65€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Ranskalainen</span>
+                        <span class="price__item__descr">Hinta perusrakennekynsien päälle.</span>
+                        <span class="price__ineuro">7€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Kynsihuolto</span>
+                        <span class="price__item__descr">Alle 5 viikkoa edellisestä huollosta.</span>
+                        <span class="price__ineuro">45€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Rakennekynsien poisto</span>
+                        <span class="price__ineuro">25€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Ruiskumaalaus</span>
+                        <span class="price__ineuro">12€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Ranskalainen massalla</span>
+                        <span class="price__item__descr">Hinta perusrakennekynsien päälle.</span>
+                        <span class="price__ineuro">15€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Rakennekynnet</span>
+                        <span class="price__item__descr">Geelillä</span>
+                        <span class="price__ineuro">65€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Amerikanranskalainen</span>
+                        <span class="price__item__descr">Hinta perusrakennekynsien päälle.</span>
+                        <span class="price__ineuro">10€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Kynsihuolto</span>
+                        <span class="price__item__descr">Yli 5 viikkoa edellisestä huollosta.</span>
+                        <span class="price__ineuro">55€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Pedikyyri</span>
+                        <span class="price__item__descr">Sisältää leikkauksen, viilauksen ja lakkauksen</span>
+                        <span class="price__ineuro">45€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Ranskalainen</span>
+                        <span class="price__item__descr">Lisätään pedikyyrin/kestopedikyyrin tai manikyyrin hintaan.</span>
+                        <span class="price__ineuro">10€</span>
+                    </li>
+                    <li class="price__item">
+                        <span class="price__item__naming">Kestopedikyyri</span>
+                        <span class="price__item__descr">Varpaille rakennekynnet.</span>
+                        <span class="price__ineuro">69€</span>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
-    <footer class="footer index-footer">
+
+    <footer class="footer price-footer">
         <div class="container flex footer__flex">
            <div class="footer__left">
                 <h2 class="footer__title">ESPOO</h2>
@@ -51,4 +98,3 @@
     <script src="main.js"></script>
 </body>
 </html>
-
