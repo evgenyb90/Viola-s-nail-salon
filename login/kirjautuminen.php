@@ -32,9 +32,9 @@ if (isset($_SESSION["user_id"])) {
     <p>Terve <?= htmlspecialchars($user["name"]) ?>!</p> <br>
     <a href="../index.php">Etusivu</a> <br>
     <a href="logout.php">Kirjaudu ulos</a> <br><br>
-    <h1>Palaute</h1>
+    <h1>Feedback</h1>
     <form action="feedback.php" method="POST">
-        <p>Merkitse sinulle sopiva päiviä ja aika ja otamme sinuun pian yhteyttä.</p>
+        <p>Merkitse sinulle sopivat päivät ja aika ja otamme sinuun pian yhteyttä.</p>
         <label for="name">Valitse Työntekijä:</label><br>
         <select name="name" id="name" required>
             <option value="Veronika">Veronika</option>
